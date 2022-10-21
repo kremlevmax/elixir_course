@@ -8,17 +8,17 @@
 
 ### Data Types
 
-**1. Integers**
+**1. Integers**  
 `3`, `777`, `-2`, `0`, `1_000_000`
 
-2. Floats
-   3.14, 0.00000001
+**2. Floats**  
+`3.14`, `0.00000001`
 
-3. Atoms
-   An atom is a constant whose name is its value.
-   The booleans true and false are also the atoms :true and :false, respectively.
-   Names of modules in Elixir are also atoms.
-   :name, :gender, :status
+**3. Atoms**  
+An atom is a constant whose name is its value.
+The booleans true and false are also the atoms :true and :false, respectively.
+Names of modules in Elixir are also atoms.
+`:name`, `:gender`, `:status`
 
 4. Strings
    "Let it be"
