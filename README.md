@@ -22,6 +22,21 @@ _Data Types_
 4. Strings
    "Let it be"
 
+5. Maps
+   %{:name => "Max", "hello" => :world}
+
+iex(13)> newMap["hello"]
+:world
+
+Short syntax:
+%{name: "Max", hello: :world}
+
+%{foo: "bar", hello: "world"}
+
+6. Lists
+   [1, 2]
+   List can contain mixed types of information
+
 - List Concatenation
   [1, 2] ++ [3, 4, 1]
   [1, 2, 3, 4, 1]
