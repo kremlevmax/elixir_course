@@ -1,14 +1,15 @@
-Elixir Programming Language
+## Elixir Programming Language
 
-_Help commands_
-iex - Start Elixir’s Interactive Shell
-h - Get Help info about function
-i - Variable Data Type Information
+### Help commands
 
-_Data Types_
+`iex` - Start Elixir’s Interactive Shell
+`h` - Get Help info about function
+`i` - Variable Data Type Information
 
-1. Integers
-   3, 777, -2, 0, 1_000_000
+### Data Types
+
+**1. Integers**
+`3`, `777`, `-2`, `0`, `1_000_000`
 
 2. Floats
    3.14, 0.00000001
@@ -57,29 +58,42 @@ _Data Types_
    This makes accessing their length fast but modification expensive; the new tuple must be copied entirely to memory.
    {3.14, :pie, "Apple"}
 
+   ---PATTERN MATCHING----
+   my_tuple = {:add, [1, 2]}
+   {:add, [1, 2]}
+
+   iex(43)> {atom, [first, second]} = my_tuple
+   {:add, [1, 2]}
+
+   iex(44)> atom
+   :add
+
+   iex(45)> first
+   1
+
 7. Maps
    %{:name => "Max", "hello" => :world}
 
-iex(13)> newMap["hello"]
-:world
+   iex(13)> newMap["hello"]
+   :world
 
-Short syntax:
-%{name: "Max", hello: :world}
+   Short syntax:
+   %{name: "Max", hello: :world}
 
-%{foo: "bar", hello: "world"}
+   {foo: "bar", hello: "world"}
 
----PATTERN MATCHING---
-iex(38)> coder = %{"name" => "Max", "language" => "Elixir"}
-%{"language" => "Elixir", "name" => "Max"}
+   ---PATTERN MATCHING---
+   iex(38)> coder = %{"name" => "Max", "language" => "Elixir"}
+   %{"language" => "Elixir", "name" => "Max"}
 
-iex(39)> %{"name" => name, "language" => language} = coder
-%{"language" => "Elixir", "name" => "Max"}
+   iex(39)> %{"name" => name, "language" => language} = coder
+   %{"language" => "Elixir", "name" => "Max"}
 
-iex(40)> name
-"Max"
+   iex(40)> name
+   "Max"
 
-iex(41)> language
-"Elixir"
+   iex(41)> language
+   "Elixir"
 
 8. Structs
    Structs are extensions built on top of maps that provide compile-time checks and default values.
