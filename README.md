@@ -2,8 +2,8 @@
 
 ### Help commands
 
-`iex` - Start Elixir’s Interactive Shell
-`h` - Get Help info about function
+`iex` - Start Elixir’s Interactive Shell  
+`h` - Get Help info about function  
 `i` - Variable Data Type Information
 
 ### Data Types
