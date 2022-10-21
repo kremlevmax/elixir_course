@@ -22,18 +22,17 @@ _Data Types_
 4. Strings
    "Let it be"
 
-5. Maps
-   %{:name => "Max", "hello" => :world}
+   iex(32)> "admin " <> "Max"
+   "admin Max"
 
-iex(13)> newMap["hello"]
-:world
+   --Pattern matching---
+   iex(34)> "check: " <> check_str = "check: 7"
+   "check: 7"
 
-Short syntax:
-%{name: "Max", hello: :world}
+   iex(35)> check_str
+   "7"
 
-%{foo: "bar", hello: "world"}
-
-6. Lists
+5. Lists
    [1, 2]
    List can contain mixed types of information
 
@@ -52,3 +51,44 @@ Short syntax:
 [2]
 [2.0] -- [2.0]
 []
+
+6. Tuples
+   Tuples are similar to lists, but are stored contiguously in memory.
+   This makes accessing their length fast but modification expensive; the new tuple must be copied entirely to memory.
+   {3.14, :pie, "Apple"}
+
+7. Maps
+   %{:name => "Max", "hello" => :world}
+
+iex(13)> newMap["hello"]
+:world
+
+Short syntax:
+%{name: "Max", hello: :world}
+
+%{foo: "bar", hello: "world"}
+
+---PATTERN MATCHING---
+iex(38)> coder = %{"name" => "Max", "language" => "Elixir"}
+%{"language" => "Elixir", "name" => "Max"}
+
+iex(39)> %{"name" => name, "language" => language} = coder
+%{"language" => "Elixir", "name" => "Max"}
+
+iex(40)> name
+"Max"
+
+iex(41)> language
+"Elixir"
+
+8. Structs
+   Structs are extensions built on top of maps that provide compile-time checks and default values.
+
+iex> defmodule User do
+...> defstruct name: "John", age: 27
+...> end
+
+iex> %User{}
+%User{age: 27, name: "John"}
+iex> %User{name: "Jane"}
+%User{age: 27, name: "Jane"}
