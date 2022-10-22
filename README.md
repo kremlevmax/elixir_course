@@ -8,20 +8,32 @@
 
 ### Data Types
 
-**1. Integers**  
-`bash 3, 777, -2, 0, 1_000_000`
+**1. Integers**
 
-**2. Floats**  
-`bash3.14, 0.00000001`
+```bash
+3, 777, -2, 0, 1_000_000
+```
+
+**2. Floats**
+
+```bash
+3.14, 0.00000001
+```
 
 **3. Atoms**  
 An atom is a constant whose name is its value.
 The booleans true and false are also the atoms :true and :false, respectively.
-Names of modules in Elixir are also atoms.  
-`bash:name, :gender, :status`
+Names of modules in Elixir are also atoms.
 
-**4. Strings**  
-`bash"Let it be"`
+```bash
+:name, :gender, :status
+```
+
+**4. Strings**
+
+```bash
+"Let it be"
+```
 
 ```bash
 iex(32)> "admin " <> "Max"
@@ -41,7 +53,9 @@ iex(35)> check_str
 **5. Lists**
 List can contain mixed types of information
 
-`bash[1, 2]`
+```bash
+[1, 2]
+```
 
 _--- List Concatenation ---_
 
