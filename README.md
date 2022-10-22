@@ -17,21 +17,20 @@
 **3. Atoms**  
 An atom is a constant whose name is its value.
 The booleans true and false are also the atoms :true and :false, respectively.
-Names of modules in Elixir are also atoms.
+Names of modules in Elixir are also atoms.  
 `:name`, `:gender`, `:status`
 
-4. Strings
-   "Let it be"
+**4. Strings**
+`"Let it be"``
 
-   iex(32)> "admin " <> "Max"
-   "admin Max"
+`iex(32)> "admin " <> "Max" "admin Max"`
 
-   --Pattern matching---
-   iex(34)> "check: " <> check_str = "check: 7"
-   "check: 7"
+--Pattern matching---
+iex(34)> "check: " <> check_str = "check: 7"
+"check: 7"
 
-   iex(35)> check_str
-   "7"
+iex(35)> check_str
+"7"
 
 5. Lists
    [1, 2]
