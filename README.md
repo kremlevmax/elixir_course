@@ -23,7 +23,10 @@ Names of modules in Elixir are also atoms.
 **4. Strings**
 `"Let it be"``
 
-`iex(32)> "admin " <> "Max" "admin Max"`
+```bash
+iex(32)> "admin " <> "Max"
+"admin Max"
+```
 
 --Pattern matching---
 iex(34)> "check: " <> check_str = "check: 7"
