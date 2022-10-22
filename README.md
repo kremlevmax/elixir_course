@@ -150,3 +150,13 @@ iex> %User{}
 iex> %User{name: "Jane"}
 %User{age: 27, name: "Jane"}
 ```
+
+**Conditional Expressions**
+
+```bash
+ cond do
+    age < 18 -> "You can't vote yet"
+    age < 25 -> "You can vote"
+    true -> "You can vote and can be a president also"
+  end
+```
