@@ -151,7 +151,7 @@ iex> %User{name: "Jane"}
 %User{age: 27, name: "Jane"}
 ```
 
-**Conditional Expressions**
+**9. Conditional Expressions**
 
 ```bash
  cond do
@@ -161,7 +161,7 @@ iex> %User{name: "Jane"}
   end
 ```
 
-**Case Expressions**
+**10. Case Expressions**
 
 ```bash
 message = case Float.parse(age) do
@@ -172,7 +172,7 @@ message = case Float.parse(age) do
 end
 ```
 
-**9. Functions**
+**11. Functions**
 
 _Anonymous Functions_
 
