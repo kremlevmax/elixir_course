@@ -171,3 +171,33 @@ message = case Float.parse(age) do
   :error -> "Invalid input"
 end
 ```
+
+**9. Functions**
+
+_Anonymous Functions_
+
+```bash
+fn(age) ->
+  case (Float.parse(age)) do
+    {age, _} when age < 18  -> "You are not allowed to vote"
+    {age, _} when age < 25 -> "You can vote"
+    {_age, _} -> "You can vote and be a president also"
+    :error -> "Invalid input"
+  end
+end
+```
+
+_Named Functions_
+
+```bash
+defmodule Voter do
+  def check_age(age) do
+    case Integer.parse(age) do
+     {age, _} when age < 18  -> "You are not allowed yo vote yet"
+     {age, _} when age < 25 -> "You can vote"
+     {_age, _} -> "You can vote and even be a president"
+     :error -> "Invalid input"
+    end
+  end
+end
+```
