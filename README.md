@@ -160,3 +160,14 @@ iex> %User{name: "Jane"}
     true -> "You can vote and can be a president also"
   end
 ```
+
+**Case Expressions**
+
+```bash
+message = case Float.parse(age) do
+  {age, _} when age < 18  -> "You are to young to vote"
+  {age, _} when age < 25 -> "You are allowed to vote"
+  {_age, _} -> "You can vote and can become the president yourself"
+  :error -> "Invalid input"
+end
+```
