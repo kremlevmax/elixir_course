@@ -9,3 +9,6 @@ votes = [
 
 second_district = Enum.filter(votes, fn x -> x.district == 2 end)
 IO.inspect(second_district)
+
+
+## Commit check
