@@ -7,7 +7,8 @@ votes = [
   %{district: 2, candidate: 3, votes: 80}
 ]
 
-second_district = Enum.filter(votes, fn x -> x.district == 2 end)
+second_district = Enum.filter(votes, &(&1.district in [1]))
+|> Enum.map(&Map.take(&1, [:candidate, :votes]))
 IO.inspect(second_district)
 
 
