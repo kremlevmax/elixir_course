@@ -10,6 +10,3 @@ votes = [
 second_district = Enum.filter(votes, &(&1.district in [1]))
 |> Enum.map(&Map.take(&1, [:candidate, :votes]))
 IO.inspect(second_district)
-
-
-## Commit check
